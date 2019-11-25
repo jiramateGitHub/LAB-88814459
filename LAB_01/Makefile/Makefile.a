@@ -1,0 +1,11 @@
+# Sample Makefile
+lab01 : lab01.o
+# Use <tab> not <space_bar> for indent
+	@echo "Link and create an execute file"
+	g++ lab01.o -o lab01
+lab01.o : lab01.cpp
+	@echo "Compile the program"
+	g++ -c lab01.cpp
+clean :
+	@echo "Clean non source code file"
+	rm -rf *.o lab01
